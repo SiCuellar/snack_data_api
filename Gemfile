@@ -14,6 +14,7 @@ group :development, :test do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'fast_jsonapi'
+  gem 'simplecov', require: false
 end
 
 group :development do
