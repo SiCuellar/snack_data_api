@@ -7,7 +7,7 @@ class NutritionService
 
   def get_json(path)
     response = conn.get(path)
-    binding.pry
+    # binding.pry
 
     JSON.parse(response.body, symbolize_names: true)
   end
