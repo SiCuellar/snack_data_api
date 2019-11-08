@@ -7,6 +7,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'bootsnap', '>= 1.4.2', require: false
 
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
@@ -14,6 +15,8 @@ group :development, :test do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'fast_jsonapi'
+  gem 'faraday'
+  gem 'simplecov', require: false
 end
 
 group :development do
