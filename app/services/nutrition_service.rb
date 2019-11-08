@@ -1,5 +1,6 @@
 class NutritionService
   def get_snack_data(snack_name)
+    binding.pry
     get_json("q=#{snack_name}&app_id=#{ENV["EDAMAM_APP_ID"]}&app_key=#{ENV["EDAMAM_API_KEY"]}")
   end
 
@@ -7,8 +8,6 @@ class NutritionService
 
   def get_json(path)
     response = conn.get(path)
-    # binding.pry
-
     JSON.parse(response.body, symbolize_names: true)
   end
 
